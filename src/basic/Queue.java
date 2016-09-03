@@ -1,4 +1,4 @@
-/**
+package basic; /**
  * Created by nagabharan on 30-Aug-16.
  */
 
@@ -38,23 +38,23 @@ public class Queue {
         Queue.priorityInsert("10");
 
 		/*
-        Queue.insert("10");
+        basic.Queue.insert("10");
 
-		Queue.displayQueue();
+		basic.Queue.displayQueue();
 
-		Queue.insert("15");
+		basic.Queue.insert("15");
 
-		Queue.displayQueue();
+		basic.Queue.displayQueue();
 
-		Queue.insert("25");
+		basic.Queue.insert("25");
 
-		Queue.displayQueue();
+		basic.Queue.displayQueue();
 
-		Queue.insert("25");
+		basic.Queue.insert("25");
 
-		Queue.displayQueue();
+		basic.Queue.displayQueue();
 
-		Queue.insert("25");
+		basic.Queue.insert("25");
 		*/
 
         Queue.displayQueue();
@@ -83,11 +83,11 @@ public class Queue {
 
             numberOfItems++;
 
-            System.out.println("INSERT " + input + " Was Added to the Stack\n");
+            System.out.println("INSERT " + input + " Was Added to the basic.Stack\n");
 
         } else {
 
-            System.out.println("Sorry But the Queue is Full");
+            System.out.println("Sorry But the basic.Queue is Full");
 
         }
 
@@ -127,7 +127,7 @@ public class Queue {
 
         if (numberOfItems > 0) {
 
-            System.out.println("REMOVE " + queueArray[front] + " Was Removed From the Queue\n");
+            System.out.println("REMOVE " + queueArray[front] + " Was Removed From the basic.Queue\n");
 
             // Just like in memory an item isn't deleted, but instead is just not available
 
@@ -139,7 +139,7 @@ public class Queue {
 
         } else {
 
-            System.out.println("Sorry But the Queue is Empty");
+            System.out.println("Sorry But the basic.Queue is Empty");
 
 
         }

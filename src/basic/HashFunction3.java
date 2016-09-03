@@ -1,4 +1,4 @@
-/**
+package basic; /**
  * Created by nagabharan on 30-Aug-16.
  */
 
@@ -91,7 +91,7 @@ public class HashFunction3 {
 
         String wordToHash = newWord.theWord;
 
-        // Calculate the hashkey for the Word
+        // Calculate the hashkey for the basic.Word
 
         int hashKey = stringHashFunction(wordToHash);
 
@@ -123,12 +123,12 @@ public class HashFunction3 {
             String word = elementsToAdd[i][0];
             String definition = elementsToAdd[i][1];
 
-            // Create the Word with the word name and
+            // Create the basic.Word with the word name and
             // definition
 
             Word newWord = new Word(word, definition);
 
-            // Add the Word to theArray
+            // Add the basic.Word to theArray
 
             insert(newWord);
 
@@ -157,7 +157,7 @@ class Word {
 
     public int key;
 
-    // Reference to next Word made in the WordList
+    // Reference to next basic.Word made in the basic.WordList
 
     public Word next;
 
@@ -178,8 +178,8 @@ class Word {
 
 class WordList {
 
-    // Reference to first Link in list
-    // The last Link added to the LinkedList
+    // Reference to first basic.Link in list
+    // The last basic.Link added to the basic.LinkedList
 
     public Word firstWord = null;
 

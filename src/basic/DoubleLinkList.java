@@ -1,8 +1,10 @@
+package basic;
+
 /**
  * Created by nagabharan on 30-Aug-16.
  */
-// A Double Ended LinkedList has a reference to 
-// the first and last Link in the List
+// A Double Ended basic.LinkedList has a reference to
+// the first and last basic.Link in the List
 
 public class DoubleLinkList {
 
@@ -35,7 +37,7 @@ public class DoubleLinkList {
 
         System.out.println("\n");
 
-        // Send the LinkedList to the iterator
+        // Send the basic.LinkedList to the iterator
 
         NeighborIterator neighbors = new NeighborIterator(theLinkedList);
 
@@ -47,7 +49,7 @@ public class DoubleLinkList {
 
         System.out.println(neighbors.hasNext());
 
-        // Switch to the next Neighbor
+        // Switch to the next basic.Neighbor
 
         neighbors.next();
 
@@ -63,8 +65,8 @@ public class DoubleLinkList {
 
         Neighbor theNewLink = new Neighbor(homeOwnerName, houseNumber);
 
-        // If no items in the list add the new Link
-        // to lastLink in the LinkedList
+        // If no items in the list add the new basic.Link
+        // to lastLink in the basic.LinkedList
 
         if (isEmpty()) {
 
@@ -82,8 +84,8 @@ public class DoubleLinkList {
         // because it also has a previous as well as a next
 
         // Assign the reference to the previous
-        // firstLink and assign the new Link
-        // to firstLink in LinkedList
+        // firstLink and assign the new basic.Link
+        // to firstLink in basic.LinkedList
 
         theNewLink.next = firstLink;
 
@@ -98,7 +100,7 @@ public class DoubleLinkList {
 
         Neighbor theNewLink = new Neighbor(homeOwnerName, houseNumber);
 
-        // If empty put the new Neighbor in first position
+        // If empty put the new basic.Neighbor in first position
 
         if (isEmpty()) {
 
@@ -106,7 +108,7 @@ public class DoubleLinkList {
 
         } else {
 
-            // Assign the last Neighbors next to the new Neighbor
+            // Assign the last Neighbors next to the new basic.Neighbor
 
             lastLink.next = theNewLink;
 
@@ -128,9 +130,9 @@ public class DoubleLinkList {
 
         while (currentNeighbor.houseNumber != key) {
 
-            currentNeighbor = currentNeighbor.next; // Switch to the next Neighbor
+            currentNeighbor = currentNeighbor.next; // Switch to the next basic.Neighbor
 
-            // If we get to the last Neighbor without a match leave the method
+            // If we get to the last basic.Neighbor without a match leave the method
 
             if (currentNeighbor == null) {
 
@@ -142,11 +144,11 @@ public class DoubleLinkList {
 
         // If we make it here we have a match for the key
 
-        // If the match was for the last Neighbor in the list
+        // If the match was for the last basic.Neighbor in the list
 
         if (currentNeighbor == lastLink) {
 
-            // Assign the new Neighbor as the last link
+            // Assign the new basic.Neighbor as the last link
 
             theNewLink.next = null;
             lastLink = theNewLink;
@@ -154,9 +156,9 @@ public class DoubleLinkList {
         } else {
 
             // It didn't match for the last link
-            // So take next from the Neighbor that was
+            // So take next from the basic.Neighbor that was
             // here previously and assign theNewLink to
-            // the previous Neighbor
+            // the previous basic.Neighbor
 
             theNewLink.next = currentNeighbor.next;
             currentNeighbor.next.previous = theNewLink;
@@ -170,7 +172,7 @@ public class DoubleLinkList {
 
     }
 
-    // Returns true if LinkList is empty
+    // Returns true if basic.LinkList is empty
 
     public boolean isEmpty() {
 
@@ -184,8 +186,8 @@ public class DoubleLinkList {
 
         Neighbor theNewLink = new Neighbor(homeOwnerName, houseNumber);
 
-        // Holds he last Neighbor searched so we can change 
-        // its value for next if we input a new Neighbor
+        // Holds he last basic.Neighbor searched so we can change
+        // its value for next if we input a new basic.Neighbor
 
         Neighbor previousNeighbor = null;
 
@@ -198,7 +200,7 @@ public class DoubleLinkList {
         while ((currentNeighbor != null) && (houseNumber > currentNeighbor.houseNumber)) {
 
             previousNeighbor = currentNeighbor;
-            currentNeighbor = currentNeighbor.next; // Get the next Neighbor
+            currentNeighbor = currentNeighbor.next; // Get the next basic.Neighbor
 
         }
 
@@ -206,19 +208,19 @@ public class DoubleLinkList {
 
         if (previousNeighbor == null) {
 
-            // Save new Neighbor in the first position
+            // Save new basic.Neighbor in the first position
 
             firstLink = theNewLink;
 
         } else {
 
-            // Assign the new Neighbor as the value for next
+            // Assign the new basic.Neighbor as the value for next
 
             previousNeighbor.next = theNewLink;
 
         }
 
-        // Assign the value of next to the next Neighbor
+        // Assign the value of next to the next basic.Neighbor
 
         theNewLink.next = currentNeighbor;
 
@@ -233,7 +235,7 @@ public class DoubleLinkList {
 
             theLink.display();
 
-            System.out.println("Next Link: " + theLink.next);
+            System.out.println("Next basic.Link: " + theLink.next);
 
             theLink = theLink.next;
 
@@ -276,12 +278,12 @@ class Neighbor {
 }
 
 // An iterator provides an easy way to cycle through all
-// the objects in a LinkedList
+// the objects in a basic.LinkedList
 
 class NeighborIterator {
 
-    Neighbor currentNeighbor; // The current focus Neighbor
-    Neighbor previousNeighbor; // The previous Neighbor
+    Neighbor currentNeighbor; // The current focus basic.Neighbor
+    Neighbor previousNeighbor; // The previous basic.Neighbor
 
     DoubleLinkList theNeighbors;
 

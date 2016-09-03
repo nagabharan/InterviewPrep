@@ -1,3 +1,5 @@
+package basic;
+
 /**
  * Created by nagabharan on 30-Aug-16.
  */
@@ -8,8 +10,8 @@ public class Link {
     public String bookName;
     public int millionsSold;
 
-    // Reference to next link made in the LinkList
-    // Holds the reference to the Link that was created before it
+    // Reference to next link made in the basic.LinkList
+    // Holds the reference to the basic.Link that was created before it
     // Set to null until it is connected to other links
 
     public Link next;
@@ -25,7 +27,7 @@ public class Link {
 
         LinkList theLinkedList = new LinkList();
 
-        // Insert Link and add a reference to the book Link added just prior
+        // Insert basic.Link and add a reference to the book basic.Link added just prior
         // to the field next
 
         theLinkedList.insertFirstLink("Don Quixote", 500);
@@ -35,9 +37,9 @@ public class Link {
 
         theLinkedList.display();
 
-        System.out.println("Value of first in LinkedList " + theLinkedList.firstLink + "\n");
+        System.out.println("Value of first in basic.LinkedList " + theLinkedList.firstLink + "\n");
 
-        // Removes the last Link entered
+        // Removes the last basic.Link entered
 
         theLinkedList.removeFirst();
 
@@ -69,20 +71,20 @@ public class Link {
 
 class LinkList {
 
-    // Reference to first Link in list
-    // The last Link added to the LinkedList
+    // Reference to first basic.Link in list
+    // The last basic.Link added to the basic.LinkedList
 
     public Link firstLink;
 
     LinkList() {
 
-        // Here to show the first Link always starts as null
+        // Here to show the first basic.Link always starts as null
 
         firstLink = null;
 
     }
 
-    // Returns true if LinkList is empty
+    // Returns true if basic.LinkList is empty
 
     public boolean isEmpty() {
 
@@ -94,7 +96,7 @@ class LinkList {
 
         Link newLink = new Link(bookName, millionsSold);
 
-        // Connects the firstLink field to the new Link
+        // Connects the firstLink field to the new basic.Link
 
         newLink.next = firstLink;
 
@@ -108,13 +110,13 @@ class LinkList {
 
         if (!isEmpty()) {
 
-            // Removes the Link from the List
+            // Removes the basic.Link from the List
 
             firstLink = firstLink.next;
 
         } else {
 
-            System.out.println("Empty LinkedList");
+            System.out.println("Empty basic.LinkedList");
 
         }
 
@@ -128,13 +130,13 @@ class LinkList {
 
         // Start at the reference stored in firstLink and
         // keep getting the references stored in next for
-        // every Link until next returns null
+        // every basic.Link until next returns null
 
         while (theLink != null) {
 
             theLink.display();
 
-            System.out.println("Next Link: " + theLink.next);
+            System.out.println("Next basic.Link: " + theLink.next);
 
             theLink = theLink.next;
 
@@ -152,18 +154,18 @@ class LinkList {
 
             while (theLink.bookName != bookName) {
 
-                // Checks if at the end of the LinkedList
+                // Checks if at the end of the basic.LinkedList
 
                 if (theLink.next == null) {
 
-                    // Got to the end of the Links in LinkedList
+                    // Got to the end of the Links in basic.LinkedList
                     // without finding a match
 
                     return null;
 
                 } else {
 
-                    // Found a matching Link in the LinkedList
+                    // Found a matching basic.Link in the basic.LinkedList
 
                     theLink = theLink.next;
 
@@ -173,7 +175,7 @@ class LinkList {
 
         } else {
 
-            System.out.println("Empty LinkedList");
+            System.out.println("Empty basic.LinkedList");
 
         }
 
@@ -190,7 +192,7 @@ class LinkList {
 
         while (currentLink.bookName != bookName) {
 
-            // Check if at the last Link in the LinkedList
+            // Check if at the last basic.Link in the basic.LinkedList
 
             if (currentLink.next == null) {
 
@@ -201,7 +203,7 @@ class LinkList {
             } else {
 
                 // We checked here so let's look in the
-                // next Link on the list
+                // next basic.Link on the list
 
                 previousLink = currentLink;
 
@@ -215,15 +217,15 @@ class LinkList {
 
             // If you are here that means there was a match
             // in the reference stored in firstLink in the
-            // LinkedList so just assign next to firstLink
+            // basic.LinkedList so just assign next to firstLink
 
             firstLink = firstLink.next;
 
         } else {
 
-            // If you are here there was a match in a Link other
+            // If you are here there was a match in a basic.Link other
             // than the firstLink. Assign the value of next for
-            // the Link you want to delete to the Link that's
+            // the basic.Link you want to delete to the basic.Link that's
             // next previously pointed to the reference to remove
 
             System.out.println("FOUND A MATCH");

@@ -1,4 +1,4 @@
-/**
+package basic; /**
  * Created by nagabharan on 30-Aug-16.
  */
 // Arrays, linked lists, trees, etc. are best for
@@ -60,7 +60,7 @@ public class Stack {
 
         // Remove all from the stack
 
-        // Stack.popAll();
+        // basic.Stack.popAll();
 
         // Remove all from the stack and print them
 
@@ -79,11 +79,11 @@ public class Stack {
 
             stackArray[topOfStack] = input;
 
-        } else System.out.println("Sorry But the Stack is Full");
+        } else System.out.println("Sorry But the basic.Stack is Full");
 
         displayStack();
 
-        System.out.println("PUSH " + input + " Was Added to the Stack\n");
+        System.out.println("PUSH " + input + " Was Added to the basic.Stack\n");
 
     }
 
@@ -93,7 +93,7 @@ public class Stack {
 
             displayStack();
 
-            System.out.println("POP " + stackArray[topOfStack] + " Was Removed From the Stack\n");
+            System.out.println("POP " + stackArray[topOfStack] + " Was Removed From the basic.Stack\n");
 
             // Just like in memory an item isn't deleted, but instead is just not available
 
@@ -106,7 +106,7 @@ public class Stack {
 
             displayStack();
 
-            System.out.println("Sorry But the Stack is Empty");
+            System.out.println("Sorry But the basic.Stack is Empty");
 
             return "-1";
         }
@@ -118,7 +118,7 @@ public class Stack {
 
         displayStack();
 
-        System.out.println("PEEK " + stackArray[topOfStack] + " Is at the Top of the Stack\n");
+        System.out.println("PEEK " + stackArray[topOfStack] + " Is at the Top of the basic.Stack\n");
 
         return stackArray[topOfStack];
 
