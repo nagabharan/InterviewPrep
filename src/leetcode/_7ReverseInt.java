@@ -25,8 +25,11 @@ public class _7ReverseInt {
          */
         int rev = 0;
         int max = 1 << 31;
+
         while (x != 0) {
-            if (rev != 0 && max / rev < 10 && max / rev > -10)
+            /*if (rev != 0 && max / rev < 10 && max / rev > -10)
+                return 0;*/
+            if (rev != 0 && Math.abs(rev) > Integer.MAX_VALUE / 10)
                 return 0;
             rev = rev * 10 + x % 10;
             x /= 10;
