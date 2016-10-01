@@ -24,7 +24,7 @@ public class _94BTInOrder {
                 n.left = null;
             } else {
                 TreeNode tmp = stack.pop();
-                res.add(tmp.value);
+                res.add(tmp.val);
                 if (n.right != null) {
                     stack.push(n.right);
                 }

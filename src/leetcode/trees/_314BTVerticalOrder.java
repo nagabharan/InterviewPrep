@@ -34,10 +34,10 @@ public class _314BTVerticalOrder {
             maxlevel = Math.max(maxlevel, l);
 
             if (map.containsKey(l)) {
-                map.get(l).add(temp.value);
+                map.get(l).add(temp.val);
             } else {
                 ArrayList<Integer> list = new ArrayList<>();
-                list.add(temp.value);
+                list.add(temp.val);
                 map.put(l, list);
             }
 

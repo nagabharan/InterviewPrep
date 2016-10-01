@@ -8,12 +8,12 @@ import java.util.Stack;
  * Created by nagabharan on 30-Sep-16.
  */
 class TreeNode {
-    int value;
+    int val;
     TreeNode left;
     TreeNode right;
 
     TreeNode(int x) {
-        value = x;
+        val = x;
     }
 }
 
@@ -29,7 +29,7 @@ public class _144BTPreOrder {
 
         while (!stack.isEmpty()) {
             TreeNode n = stack.pop();
-            res.add(n.value);
+            res.add(n.val);
             if (n.right != null)
                 stack.push(n.right);
             if (n.left != null)

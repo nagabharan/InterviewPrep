@@ -28,7 +28,7 @@ public class _107BTReverseLevelOrder {
             if (n.right != null) {
                 next.add(n.right);
             }
-            l.add(n.value);
+            l.add(n.val);
             if (curr.isEmpty()) {
                 curr = next;
                 next = new LinkedList<>();

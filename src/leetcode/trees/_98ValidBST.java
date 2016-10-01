@@ -17,9 +17,9 @@ public class _98ValidBST {
         if (p == null)
             return true;
 
-        if (p.value <= min || p.value >= max)
+        if (p.val <= min || p.val >= max)
             return false;
 
-        return isValid(p.left, min, p.value) && isValid(p.right, p.value, max);
+        return isValid(p.left, min, p.val) && isValid(p.right, p.val, max);
     }
 }

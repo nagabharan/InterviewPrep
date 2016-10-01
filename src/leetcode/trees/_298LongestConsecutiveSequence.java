@@ -25,7 +25,7 @@ public class _298LongestConsecutiveSequence {
 
             if (n.left != null) {
                 int LS = l;
-                if (n.value == n.left.value - 1) {
+                if (n.val == n.left.val - 1) {
                     LS++;
                     max = Math.max(max, LS);
                 } else {
@@ -37,7 +37,7 @@ public class _298LongestConsecutiveSequence {
 
             if (n.right != null) {
                 int LS = l;
-                if (n.value == n.right.value - 1) {
+                if (n.val == n.right.val - 1) {
                     LS++;
                     max = Math.max(max, LS);
                 } else {

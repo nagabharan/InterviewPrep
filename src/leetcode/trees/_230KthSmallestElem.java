@@ -25,7 +25,7 @@ public class _230KthSmallestElem {
             res++;
 
             if (res == k) {
-                return n.value;
+                return n.val;
             }
             TreeNode r = n.right;
             while (r != null) {

@@ -21,7 +21,7 @@ public class _145BTPostOrder {
             TreeNode n = stack.peek();
             if (n.left == null && n.right == null) {
                 TreeNode temp = stack.pop();
-                res.add(temp.value);
+                res.add(temp.val);
             } else {
                 if (n.right != null) {
                     stack.push(n.right);
