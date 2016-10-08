@@ -14,7 +14,7 @@ public class LeafLevel {
         tree.root.left.left = new Node(3);
         tree.root.left.right = new Node(9);
         tree.root.left.left.left = new Node(1);
-        //tree.root.right= new Node(12);
+        //tree.root.right= new ListNode(12);
         tree.root.left.right.left = new Node(1);
         if (tree.checkUtil(tree.root, 0))
             System.out.println("Leaves are at same level");

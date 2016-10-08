@@ -4,10 +4,10 @@ package basic.binaryTrees;
  * Created by nagabharan on 18-Sep-16.
  * <p>
  * Find max sum across:
- * 1. Node only
- * 2. Max path through Left Child + Node
- * 3. Max path through Right Child + Node
- * 4. Max path through Left Child + Node + Max path through Right Child
+ * 1. ListNode only
+ * 2. Max path through Left Child + ListNode
+ * 3. Max path through Right Child + ListNode
+ * 4. Max path through Left Child + ListNode + Max path through Right Child
  */
 class Res {
     public int sum;
