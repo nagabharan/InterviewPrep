@@ -1,6 +1,5 @@
 package leetcode.linkedlist;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -11,12 +10,13 @@ public class _23MergeKSortedList {
         if (lists == null || lists.length == 0)
             return null;
 
-        PriorityQueue<ListNode> q = new PriorityQueue<ListNode>(new Comparator<ListNode>() {
+        PriorityQueue<ListNode> q = new PriorityQueue<>();
+        /*PriorityQueue<ListNode> q = new PriorityQueue<ListNode>(new Comparator<ListNode>() {
             @Override
             public int compare(ListNode o1, ListNode o2) {
                 return o1.val - o2.val;
             }
-        });
+        });*/
 
         ListNode fh = new ListNode(0);
         ListNode p = fh;

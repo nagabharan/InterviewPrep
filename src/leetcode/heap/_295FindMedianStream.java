@@ -10,7 +10,7 @@ public class _295FindMedianStream {
     PriorityQueue<Integer> maxHeap, minHeap;
 
     public _295FindMedianStream() {
-        maxHeap = new PriorityQueue<Integer>(Collections.reverseOrder());
+        maxHeap = new PriorityQueue<Integer>((PriorityQueue<? extends Integer>) Collections.reverseOrder());
         minHeap = new PriorityQueue<Integer>();
     }
 
